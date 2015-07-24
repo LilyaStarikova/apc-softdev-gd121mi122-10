@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2015 at 07:49 AM
+-- Generation Time: Jul 24, 2015 at 07:08 AM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -36,14 +36,15 @@ CREATE TABLE IF NOT EXISTS `myaddress` (
   `landline` varchar(20) DEFAULT NULL,
   `cellphone` varchar(20) DEFAULT NULL,
   `created_at` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `myaddress`
 --
 
 INSERT INTO `myaddress` (`id`, `firstname`, `middlename`, `lastname`, `gender`, `home_address`, `landline`, `cellphone`, `created_at`) VALUES
-(1, 'Liliya ', 'Alexenyevna', 'Starikova', 'M', NULL, NULL, NULL, '0000-00-00 00:00:00');
+(1, 'Liliya ', 'Alexenyevna', 'Starikova', 'M', NULL, NULL, NULL, '0000-00-00 00:00:00'),
+(2, 'elia', 'hakurei', 'ilyamter', 'm', NULL, NULL, NULL, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -90,7 +91,7 @@ ALTER TABLE `mycomment`
 -- AUTO_INCREMENT for table `myaddress`
 --
 ALTER TABLE `myaddress`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `mycomment`
 --
