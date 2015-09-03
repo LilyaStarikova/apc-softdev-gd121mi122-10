@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<head>
+  <title><ui:insert name="title">Default title</ui:insert></title>
+  <!-- Test -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<div class="section section-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Sparks Training Facility</h1>
+                   
+                                 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	
+	
+	
+	 <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h:form class="form-horizontal text-left" role="form">
+                    <h:commandButton value="Login" action="#{sparksbean.login}" />
+                     <h:commandButton action="#{sparksbean.createaccount}"  value="Create Account" />
+                    <h2>Welcome to Sparks Training Facility</h2>
+                     
+                    <h3>Company Profile</h3>
+                   <p>The First FCAW (FLUX CORD ARC WELDING) School in Bataan, Zambales and Pampanga, <b>SPARKS TRAINING FACILITY</b>take pride in delivering High Quality Training, Complete facilities and Equiptment, Providing a Full training Experience</p>
+           			 <p>The training module does not limit itself to the technical skills, part of the module is a behavioral training that prepares the participants to the job they will be taking after graduation, this is what we call "<b>SPARKS TRAINING</b> a combination of behavioral and technical training, another in first training industry</p>
+           			 <p>Our team composed of seasonal behavioral and technical local trainers has mentored a thousand participants in different companies, while our welding trainers certified by local and international welding organizations, have gained local and international welding experience that Guarantee our Training module being utilize will be properly learned and absorbed by the trainees in the trading facility</p>
+           			 <p>The only technical school that endores our graduate to our client, from training, to job safety, to job ready up to being an EMPLOYEE, decribing the brand of customer service being extended by the organization.</p>
+           			<h:graphicImage value="http://i226.photobucket.com/albums/dd143/makveli123456/Sparks_1.jpg"/>
+		
+	
+</h:form>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="footer">
+  <ui:insert name="footer">
+    	<div class="section section-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                 
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+  </ui:insert>
+</div>
+	</body>
+	</html>

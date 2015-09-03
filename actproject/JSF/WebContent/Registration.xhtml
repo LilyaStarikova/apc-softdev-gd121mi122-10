@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<head>
+  <title><ui:insert name="title">Registration</ui:insert></title>
+  <!-- Test -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+
+
+<div id="content">
+  <ui:insert name="content">
+    	<div class="section section-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Sparks Training Facility</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	
+	
+	
+	 <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h:form class="form-horizontal text-left" role="form">
+                    <h2>Personal Information</h2>
+    <div class="form-group">
+	<div class="col-sm-2">
+	First name: <h:inputText id="firstname" value="#{sparksbean.firstname}"/>
+	</div>
+	</div>
+	<div class="form-group">
+	<div class="col-sm-2">
+	Last name: <h:inputText id="lastname" value="#{sparksbean.lastname}"/>
+	</div>
+	</div>
+	<div class="form-group">
+	<div class="col-sm-2">
+	Age: <h:inputText id="Age" value="#{sparksbean.age}"/>
+	</div>
+	</div>
+	<div class="form-group">
+	<div class="col-sm-2">
+	Contact: <h:inputText id="Contact" value="#{sparksbean.contact}"/>
+	</div>
+	</div>
+	<br/><br/>
+	Birth date: 
+	<h:selectOneMenu value = "#{sparksbean.country}">
+	<f:selectItem itemValue="1" itemLabel="1"/>
+	<f:selectItem itemValue="2" itemLabel="2"/>
+	<f:selectItem itemValue="3" itemLabel="3"/>
+	<f:selectItem itemValue="4" itemLabel="4"/>
+	</h:selectOneMenu>
+	
+	Birth Month:
+	<h:selectOneMenu value = "#{sparksbean.country}">
+	<f:selectItem itemValue="January" itemLabel="January"/>
+	<f:selectItem itemValue="February" itemLabel="February"/>
+	<f:selectItem itemValue="March" itemLabel="March"/>
+	<f:selectItem itemValue="April" itemLabel="April"/>
+	</h:selectOneMenu>
+	
+	Birth Year:
+	<h:selectOneMenu value = "#{sparksbean.country}">
+	<f:selectItem itemValue="1990" itemLabel="1990"/>
+	<f:selectItem itemValue="1991" itemLabel="1991"/>
+	<f:selectItem itemValue="1992" itemLabel="1992"/>
+	<f:selectItem itemValue="1993" itemLabel="1993"/>
+	</h:selectOneMenu>
+	
+	<br/><br/>
+	
+	
+	Address: <h:inputText id="Address" value="#{sparksbean.address}"/>
+	City:
+	<h:selectOneMenu value = "#{sparksbean.country}">
+	<f:selectItem itemValue="Taguig" itemLabel="Taguig"/>
+	<f:selectItem itemValue="Makati" itemLabel="Makati"/>
+	<f:selectItem itemValue="Paranaque" itemLabel="Paranaque"/>
+	<f:selectItem itemValue="Caloocan" itemLabel="Caloocan"/>
+	</h:selectOneMenu>
+	
+	Country:
+	<h:selectOneMenu value = "#{sparksbean.country}">
+	<f:selectItem itemValue="Brazil" itemLabel="Brazil"/>
+	<f:selectItem itemValue="Germany" itemLabel="Germany"/>
+	<f:selectItem itemValue="China" itemLabel="China"/>
+	<f:selectItem itemValue="Philippines" itemLabel="Philippines"/>
+	</h:selectOneMenu>
+	<br/><br/>
+	
+	<h:selectOneRadio value= "#{sparksbean.gender}">
+	<f:selectItem itemValues="Male" itemLabel="Male"/>
+	<f:selectItem itemValues="FeMale" itemLabel="FeMale"/>
+	</h:selectOneRadio>
+	<br/><br/>
+	
+	<h3> Account Information</h3>
+	Username: <h:inputText id="Username" value="#{sparksbean.username}"/>
+	<br/><br/>
+	
+	Password: <h:inputText id="Password" value="#{sparksbean.password}"/>
+	<br/><br/>
+	
+	<div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section">
+                        <div class="container">
+                            <div class="row">
+
+ 								<div class="col-md-8">
+                                    <p>I Agree to the Sparks Training Facility Terms of Service and Privacy Policy</p>
+                                  <h:commandButton value="submit" action="#{navigation.submit}" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+                    </h:form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </ui:insert>
+</div>
+
+<div id="footer">
+  <ui:insert name="footer">
+    	<div class="section section-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+  </ui:insert>
+</div>
+
+</body>
+
+</html>
