@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<head>
+  <title><ui:insert name="title">Default title</ui:insert></title>
+  <!-- Test -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css"/>
+           <link rel="stylesheet" href="http://www.w3schools.com/w3css/w3.css"/>
+           
+           <style>
+           table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th	{
+    background-color: black;
+    color: white;
+}
+           
+           </style>
+</head>
+
+<body>
+
+<div id="header">
+    <ui:insert name="header">
+    	<div class="section section-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Sparks Training Facility</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </ui:insert>
+</div>
+
+<div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h:form class="form-horizontal text-left" role="form">
+                    
+                   
+
+
+
+
+                  
+                  
+<div class="w3-container w3-orange">
+<h1>Student Record</h1> 
+</div>
+
+<center>
+<table id="t01">
+<caption>Student Information</caption>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>		
+    <th>Middle Name</th>
+  </tr>
+  <tr>
+    <td>#{managebean.firstname}</td>
+    <td>#{managebean.lastname}</td>		
+    <td>#{managebean.middlename}</td>
+  </tr>
+  
+</table>
+</center>  
+    <br></br>  
+    <center>
+<table id="t01">
+<caption>Personal Information</caption>
+  <tr>
+    <th>Birth Date</th>
+    <th>Birth Month</th>		
+    <th>Birth Year</th>
+    <th>Gender</th>
+    <th>Citizenship</th>
+    
+  </tr>
+  <tr>
+    <td>#{managebean.birthdate}</td>
+    <td>#{managebean.birthmonth}</td>		
+    <td>#{managebean.birthyear}</td>
+    <td>#{managebean.gender}</td>
+    <td>#{managebean.citizenship}</td>
+  </tr>
+  
+</table>
+</center>         
+	<br></br>
+	
+	<center>
+<table id="t01">
+<caption>Contact Information</caption>
+  <tr>
+    <th>Contact Number</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>Country</th>	
+    <th>Email Address</th>
+  </tr>
+  <tr>
+    <td>#{managebean.contact}</td>
+    <td>#{managebean.street}</td>	
+    <td>#{managebean.city}</td>
+    <td>#{managebean.country}</td>
+    <td>#{managebean.email}</td>
+  </tr>
+  
+</table>
+
+<h2>Add another student ?</h2>
+<h:commandButton value="Yes" action="#{navigationbean.add}" />
+<h:commandButton value="No" action="#{navigationbean.manage}" />
+</center>
+</h:form>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="footer">
+  <ui:insert name="footer">
+    	<div class="section section-danger">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                 
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+  </ui:insert>
+</div>
+
+
+
+	</body>
+	</html>
